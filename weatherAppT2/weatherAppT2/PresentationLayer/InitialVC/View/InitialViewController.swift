@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InitialViewController: UIViewController {
+
+    // MARK: - Props
+    var output: InitialViewOutput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,3 +21,15 @@ class ViewController: UIViewController {
 
 }
 
+
+extension InitialViewController: InitialViewInput {
+    func setupInitialState() {
+
+    }
+
+    func showCommonInfo(_ info: String) {
+        
+    }
+
+
+}
