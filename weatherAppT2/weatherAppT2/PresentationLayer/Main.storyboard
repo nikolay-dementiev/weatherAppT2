@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sSs-jg-dfT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CoV-Lu-2Ys">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,13 +17,44 @@
                     <view key="view" contentMode="scaleToFill" id="4Xb-cE-Dai">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-A3-IO8">
+                                <rect key="frame" x="159" y="318.5" width="57" height="30"/>
+                                <state key="normal" title="GetData">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchAction:" destination="sSs-jg-dfT" eventType="touchUpInside" id="qQO-6K-1CK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.8571793754" blue="0.29253667550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K4V-A3-IO8" firstAttribute="centerY" secondItem="4Xb-cE-Dai" secondAttribute="centerY" id="SWU-e9-8Lz"/>
+                            <constraint firstItem="K4V-A3-IO8" firstAttribute="centerX" secondItem="4Xb-cE-Dai" secondAttribute="centerX" id="tRV-wL-3PS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gBJ-2c-mD5"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PKF-nr-142"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dae-Hp-DQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="201"/>
+            <point key="canvasLocation" x="1016.8" y="200.14992503748127"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qQb-Wy-U4M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CoV-Lu-2Ys" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WkS-RK-KWF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N66-xA-1bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="200"/>
         </scene>
     </scenes>
 </document>

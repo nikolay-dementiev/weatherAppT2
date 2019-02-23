@@ -32,11 +32,17 @@
 		E77A280122218F130034F343 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A280022218F130034F343 /* Fonts.swift */; };
 		E77A280322218F7F0034F343 /* JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A280222218F7F0034F343 /* JSONSerializable.swift */; };
 		E77A280522218F960034F343 /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A280422218F960034F343 /* AlertPresentable.swift */; };
-		E77A2808222191AD0034F343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77A2807222191AD0034F343 /* Main.storyboard */; };
 		E77A280B222192F40034F343 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A280A222192F40034F343 /* Navigator.swift */; };
 		E77A280D222193E30034F343 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A280C222193E20034F343 /* Storyboard.swift */; };
 		E77A280F222194FE0034F343 /* InitialViewInputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A280E222194FE0034F343 /* InitialViewInputOutput.swift */; };
 		E77A2811222195800034F343 /* FiveDaysForecastFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A2810222195800034F343 /* FiveDaysForecastFlowDelegate.swift */; };
+		E77A281322219CE90034F343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77A281222219CE80034F343 /* Main.storyboard */; };
+		E77A28152221A2BF0034F343 /* FiveDayForecastRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A28142221A2BE0034F343 /* FiveDayForecastRequestParams.swift */; };
+		E77A28172221A3E20034F343 /* FiveDaysForecastResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A28162221A3E20034F343 /* FiveDaysForecastResponseItem.swift */; };
+		E77A281A2221DEFC0034F343 /* FiveDaysForecastMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A28192221DEFC0034F343 /* FiveDaysForecastMapper.swift */; };
+		E77A281C2221E8B60034F343 /* Sequence+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A281B2221E8B60034F343 /* Sequence+Additions.swift */; };
+		E77A281E2221ECAD0034F343 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A281D2221ECAD0034F343 /* Date+Additions.swift */; };
+		E77A28212221F0300034F343 /* ForecastItemsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A28202221F0300034F343 /* ForecastItemsDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,11 +73,17 @@
 		E77A280022218F130034F343 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E77A280222218F7F0034F343 /* JSONSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializable.swift; sourceTree = "<group>"; };
 		E77A280422218F960034F343 /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
-		E77A2807222191AD0034F343 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E77A280A222192F40034F343 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		E77A280C222193E20034F343 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		E77A280E222194FE0034F343 /* InitialViewInputOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewInputOutput.swift; sourceTree = "<group>"; };
 		E77A2810222195800034F343 /* FiveDaysForecastFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDaysForecastFlowDelegate.swift; sourceTree = "<group>"; };
+		E77A281222219CE80034F343 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E77A28142221A2BE0034F343 /* FiveDayForecastRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastRequestParams.swift; sourceTree = "<group>"; };
+		E77A28162221A3E20034F343 /* FiveDaysForecastResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDaysForecastResponseItem.swift; sourceTree = "<group>"; };
+		E77A28192221DEFC0034F343 /* FiveDaysForecastMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDaysForecastMapper.swift; sourceTree = "<group>"; };
+		E77A281B2221E8B60034F343 /* Sequence+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Additions.swift"; sourceTree = "<group>"; };
+		E77A281D2221ECAD0034F343 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		E77A28202221F0300034F343 /* ForecastItemsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastItemsDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,9 +182,9 @@
 		E77A27CD222182720034F343 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				E77A2809222192E70034F343 /* Navigator */,
+				E77A281222219CE80034F343 /* Main.storyboard */,
 				E77A27BA22216ACA0034F343 /* LaunchScreen.storyboard */,
-				E77A2807222191AD0034F343 /* Main.storyboard */,
+				E77A2809222192E70034F343 /* Navigator */,
 				E77A27D2222186A20034F343 /* InitialVC */,
 				E77A27CE2221827B0034F343 /* PresentationCommon */,
 			);
@@ -217,6 +229,7 @@
 		E77A27D6222188AB0034F343 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E77A28182221DE9C0034F343 /* MapLayer */,
 				E77A27DD2221897E0034F343 /* Network Layer */,
 				E77A27DA222189240034F343 /* FiveDaysForecastService */,
 				E77A27D7222188D50034F343 /* AppService */,
@@ -236,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				E77A27DB222189470034F343 /* FiveDaysForecastService.swift */,
+				E77A28142221A2BE0034F343 /* FiveDayForecastRequestParams.swift */,
 			);
 			path = FiveDaysForecastService;
 			sourceTree = "<group>";
@@ -274,6 +288,7 @@
 		E77A27E922218C190034F343 /* ResponseItems */ = {
 			isa = PBXGroup;
 			children = (
+				E77A28162221A3E20034F343 /* FiveDaysForecastResponseItem.swift */,
 			);
 			path = ResponseItems;
 			sourceTree = "<group>";
@@ -317,6 +332,8 @@
 			children = (
 				E77A27F922218E4B0034F343 /* Dictionary+Additions.swift */,
 				E77A27FB22218E730034F343 /* String+Additions.swift */,
+				E77A281B2221E8B60034F343 /* Sequence+Additions.swift */,
+				E77A281D2221ECAD0034F343 /* Date+Additions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -345,6 +362,23 @@
 				E77A280A222192F40034F343 /* Navigator.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		E77A28182221DE9C0034F343 /* MapLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E77A281F2221EFFC0034F343 /* MapItems */,
+				E77A28192221DEFC0034F343 /* FiveDaysForecastMapper.swift */,
+			);
+			path = MapLayer;
+			sourceTree = "<group>";
+		};
+		E77A281F2221EFFC0034F343 /* MapItems */ = {
+			isa = PBXGroup;
+			children = (
+				E77A28202221F0300034F343 /* ForecastItemsDTO.swift */,
+			);
+			path = MapItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,7 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77A2808222191AD0034F343 /* Main.storyboard in Resources */,
+				E77A281322219CE90034F343 /* Main.storyboard in Resources */,
 				E77A27BC22216ACA0034F343 /* LaunchScreen.storyboard in Resources */,
 				E77A27B922216ACA0034F343 /* Assets.xcassets in Resources */,
 			);
@@ -421,6 +455,7 @@
 				E77A280322218F7F0034F343 /* JSONSerializable.swift in Sources */,
 				E77A27E522218A940034F343 /* ServerConfig.swift in Sources */,
 				E77A27FF22218ED30034F343 /* Colors.swift in Sources */,
+				E77A28172221A3E20034F343 /* FiveDaysForecastResponseItem.swift in Sources */,
 				E77A280522218F960034F343 /* AlertPresentable.swift in Sources */,
 				E77A27F322218D360034F343 /* Request.swift in Sources */,
 				E77A280B222192F40034F343 /* Navigator.swift in Sources */,
@@ -434,15 +469,20 @@
 				E77A27EE22218C960034F343 /* NetworkService.swift in Sources */,
 				E77A27F622218D610034F343 /* NetworkClient.swift in Sources */,
 				E77A27FA22218E4B0034F343 /* Dictionary+Additions.swift in Sources */,
+				E77A281C2221E8B60034F343 /* Sequence+Additions.swift in Sources */,
 				E77A27E02221899B0034F343 /* Commons.swift in Sources */,
 				E77A27B222216AC90034F343 /* AppDelegate.swift in Sources */,
 				E77A27FC22218E730034F343 /* String+Additions.swift in Sources */,
+				E77A28212221F0300034F343 /* ForecastItemsDTO.swift in Sources */,
 				E77A27F122218D050034F343 /* RequestProtocol.swift in Sources */,
 				E77A27C822217F760034F343 /* Coordinator.swift in Sources */,
+				E77A281E2221ECAD0034F343 /* Date+Additions.swift in Sources */,
 				E77A27D4222186BD0034F343 /* InitialPresenter.swift in Sources */,
 				E77A280F222194FE0034F343 /* InitialViewInputOutput.swift in Sources */,
 				E77A280D222193E30034F343 /* Storyboard.swift in Sources */,
 				E77A27DC222189470034F343 /* FiveDaysForecastService.swift in Sources */,
+				E77A281A2221DEFC0034F343 /* FiveDaysForecastMapper.swift in Sources */,
+				E77A28152221A2BF0034F343 /* FiveDayForecastRequestParams.swift in Sources */,
 				E77A27EC22218C7F0034F343 /* NetworkServiceProtocol.swift in Sources */,
 				E77A27E2222189BC0034F343 /* NetworkError.swift in Sources */,
 			);

@@ -25,7 +25,8 @@ class NetworkService: NetworkServiceProtocol {
     }
 
     // MARK: - API
-    func execute<Response>(_ request: RequestProtocol, completion: @escaping (_ result: Result<Response>) -> ()) where Response:Codable {
+    func execute<Response>(_ request: RequestProtocol,
+                           completion: @escaping (_ result: Result<Response>) -> ()) where Response: Codable {
         do {
             guard let urlRequest = try request.urlRequest(in: self) else {
                 completion(.failure(NetworkError.invalidURL(request.endpoint)))

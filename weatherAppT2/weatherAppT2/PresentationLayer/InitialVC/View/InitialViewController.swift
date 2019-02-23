@@ -18,6 +18,11 @@ class InitialViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    // MARK: - Actions
+
+    @IBAction private func searchAction(_ sender: Any) {
+        output.didSearchAction(for: "Kiev,UA")
+    }
 
 }
 

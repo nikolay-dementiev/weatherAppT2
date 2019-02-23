@@ -14,9 +14,12 @@ class Request: RequestProtocol {
     var headers: HeadersDict?
     var parameters: JSON?
 
-    init(method: RequestMethod = .get, endpoint: String = "", params: JSON? = nil) {
+    init(method: RequestMethod = .get,
+         endpoint: String = "",
+         params: JSON? = nil) {
+
         self.method = method
         self.endpoint = endpoint
-        self.parameters = params
+        self.parameters = ServerConfig.addRequiredParemeters(params) 
     }
-}
+ }

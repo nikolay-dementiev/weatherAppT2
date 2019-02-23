@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private lazy var rootCoordinator: Coordinator = makeRootCoonrdinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        rootCoordinator.start()
         return true
     }
 

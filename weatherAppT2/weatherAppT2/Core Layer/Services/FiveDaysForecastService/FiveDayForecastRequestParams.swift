@@ -6,4 +6,13 @@
 //  Copyright © 2019 test. All rights reserved.
 //
 
-import Foundation
+struct FiveDayForecastRequestParams {
+    let countryName: String
+}
+
+extension FiveDayForecastRequestParams : JSONSerializable {
+    var toJson: JSON {
+        return ["q": countryName,
+                "units": "metric"]
+    }
+}

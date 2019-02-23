@@ -16,8 +16,6 @@ class InitialPresenter {
     // MARK: - Private Props
     private let restService = FiveDayForecastService()
 
-    // MARK: - Private API
-
 }
 
 
@@ -27,16 +25,18 @@ extension InitialPresenter: InitialViewOutput {
     }
 
     func didSearchAction(for code: String?) {
-//        guard let code = code, Validator.isValidPostCode(code) else { return }
-//        let params = RestaurantsRequestParams(code: code)
-//        restService.getRestaurants(with: params) {[weak self] (result) in
-//            switch result {
-//            case .success(let items):
-//                self?.flowDelegate?.didReceiveRastaurants(items)
-//            case .failure(let error):
-//                self?.view.showAlert(title: nil, message: error.localizedDescription)
-//            }
-//        }
+        guard let code = code else { return }
+        let params = FiveDayForecastRequestParams.init(countryName: code)
+
+        restService.getFiveDaysForecast(with: params) { [weak self] (result) in
+            switch result {
+            case .success(let items):
+                self?.flowDelegate?.didReceiveFiveDaysForecast(items)
+            case .failure(let error):
+                self?.view.showAlert(title: nil,
+                                     message: error.localizedDescription)
+            }
+        }
     }
 
 }

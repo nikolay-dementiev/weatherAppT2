@@ -41,7 +41,7 @@ extension InitialCoordinator: Coordinator {
 
 
 extension InitialCoordinator: FiveDaysForecastFlowDelegate {
-    func didReceiveFiveDaysForecast(_ items: [Any]) {
+    func didReceiveFiveDaysForecast(_ items: [ListForecastItemDTO]) {
         DispatchQueue.main.async {
 //            self.startResultsStory(items)
         }

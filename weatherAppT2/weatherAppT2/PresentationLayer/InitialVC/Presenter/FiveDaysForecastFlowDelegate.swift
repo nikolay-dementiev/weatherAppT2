@@ -7,5 +7,5 @@
 //
 
 protocol FiveDaysForecastFlowDelegate: class {
-    func didReceiveFiveDaysForecast(_ items: [Any])
+    func didReceiveFiveDaysForecast(_ items: [ListForecastItemDTO])
 }

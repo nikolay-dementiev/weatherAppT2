@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct ListForecastItemDTO {
+    let date: Date?
+    let list: [ForecastItemDTO]
+}
+
+struct ForecastItemDTO {
+    let date: Date?
+    let dateAtBeginning: Date?
+    let temperature: Float?
+    let temperatureMax: Float?
+    let temperatureMin: Float?
+    let iconWeather: String?
+}
