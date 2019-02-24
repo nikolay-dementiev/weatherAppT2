@@ -10,7 +10,7 @@ import UIKit
 
 class ForecastDataPresenterViewController: BaseViewController {
     private enum Settings {
-        static let itemHeigh: CGFloat = 120
+        static let cellItemHeigh: CGFloat = 120
     }
 
     // MARK: - Props
@@ -18,7 +18,6 @@ class ForecastDataPresenterViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
 
     // MARK: - Private Props
-    @IBOutlet weak var collectionView: UICollectionView!
     private var dataSource: [ListForecastItemDTO] = [] {
         didSet {
             tableView.reloadData()
@@ -74,32 +73,12 @@ extension ForecastDataPresenterViewController: UITableViewDataSource {
     }
 }
 
-//
-//// MARK: - UICollectionViewDataSource
-//extension ForecastDataPresenterViewController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return dataSource.count
-//    }
-//
-//    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let place = dataSource[indexPath.item]
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PlaceCell.defaultReuseIdentifier, for: indexPath) as! PlaceCell
-//        cell.renderPlace(place)
-//        return cell
-//    }
-//
-//}
-//
-//extension ForecastDataPresenterViewController: UICollectionViewDelegate {
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//
-//    }
-//
-//}
-//
-//// MARK: - UICollectionViewDelegateFlowLayout
-//extension ForecastDataPresenterViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: collectionView.bounds.width - 2*Layout.padding, height: Layout.itemHeigh)
-//    }
-//}
+//MARK: - UITableViewDelegate
+extension ForecastDataPresenterViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        return Settings.cellItemHeigh
+    }
+}
+

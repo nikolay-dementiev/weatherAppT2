@@ -16,6 +16,7 @@
 		E75E05002222D9190049CF17 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04FF2222D9190049CF17 /* SpinnerViewController.swift */; };
 		E75E05032222DA560049CF17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05022222DA560049CF17 /* BaseViewController.swift */; };
 		E75E05052222DE980049CF17 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05042222DE980049CF17 /* ActivityIndicator.swift */; };
+		E75E05082222E8920049CF17 /* ForecastDayCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05072222E8920049CF17 /* ForecastDayCollectionCell.swift */; };
 		E77A27B222216AC90034F343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B122216AC90034F343 /* AppDelegate.swift */; };
 		E77A27B422216AC90034F343 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B322216AC90034F343 /* InitialViewController.swift */; };
 		E77A27B922216ACA0034F343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77A27B822216ACA0034F343 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		E75E04FF2222D9190049CF17 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		E75E05022222DA560049CF17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E75E05042222DE980049CF17 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E75E05072222E8920049CF17 /* ForecastDayCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayCollectionCell.swift; sourceTree = "<group>"; };
 		E77A27AE22216AC90034F343 /* weatherAppT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAppT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77A27B122216AC90034F343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77A27B322216AC90034F343 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				E75E04F82222CB900049CF17 /* ForecastDayCell.swift */,
+				E75E05062222E8180049CF17 /* ForecastDayCollectionView */,
 			);
 			path = ForecastDayCell;
 			sourceTree = "<group>";
@@ -173,6 +176,14 @@
 				E75E05022222DA560049CF17 /* BaseViewController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		E75E05062222E8180049CF17 /* ForecastDayCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E75E05072222E8920049CF17 /* ForecastDayCollectionCell.swift */,
+			);
+			path = ForecastDayCollectionView;
 			sourceTree = "<group>";
 		};
 		E77A27A522216AC90034F343 = {
@@ -535,6 +546,7 @@
 				E75E05002222D9190049CF17 /* SpinnerViewController.swift in Sources */,
 				E77A280522218F960034F343 /* AlertPresentable.swift in Sources */,
 				E77A27F322218D360034F343 /* Request.swift in Sources */,
+				E75E05082222E8920049CF17 /* ForecastDayCollectionCell.swift in Sources */,
 				E77A280B222192F40034F343 /* Navigator.swift in Sources */,
 				E75E04F62222B6CB0049CF17 /* ForecastDataPresenter.swift in Sources */,
 				E75E05032222DA560049CF17 /* BaseViewController.swift in Sources */,
