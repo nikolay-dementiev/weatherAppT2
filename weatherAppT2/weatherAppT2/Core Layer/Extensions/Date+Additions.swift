@@ -29,8 +29,20 @@ extension Date {
     }
 
     func formatForCellSection() -> String {
+         return getFormattedString("MMM. dd")
+    }
+
+    func getDay() -> String {
+        return getFormattedString("dd")
+    }
+
+    func getHour() -> String {
+        return getFormattedString("HH")
+    }
+
+    private func getFormattedString(_ strFormat: String) -> String {
         let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "MMM. dd"
+        dateFormatterPrint.dateFormat = strFormat
 
         return dateFormatterPrint.string(from: self)
     }

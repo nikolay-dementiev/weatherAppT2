@@ -30,14 +30,15 @@ class ForecastDataPresenterViewController: BaseViewController {
         tableView.tableFooterView = UIView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+
 }
 
 // MARK: - ForecastDataViewInput
 extension ForecastDataPresenterViewController: ForecastDataViewInput {
-
-    func setupInitialState() {
-
-    }
 
     func renderForecastData(_ forecastData: [ListForecastItemDTO]) {
         dataSource = forecastData

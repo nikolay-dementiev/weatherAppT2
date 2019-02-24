@@ -20,4 +20,9 @@ struct ForecastItemDTO {
     let temperatureMax: Float?
     let temperatureMin: Float?
     let iconWeather: String?
+    var iconWeatherURL: String? {
+        guard let iconWeather = iconWeather else { return nil }
+        let imageDownloadBaseURL = ServerConfig.getImageDownloadHostPath()
+        return "\(imageDownloadBaseURL)/\(iconWeather).png"
+    }
 }

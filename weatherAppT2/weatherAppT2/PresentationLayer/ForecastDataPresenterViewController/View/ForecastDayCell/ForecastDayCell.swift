@@ -11,9 +11,10 @@ import UIKit
 class ForecastDayCell: UITableViewCell {
     private enum Settings {
         static let collectionItemPadding: CGFloat = 5
-        static let collectionItemsPerRow: CGFloat = 3
+        static let collectionItemsPerRow: CGFloat = 2.5
     }
 
+    // MARK: - Private Props
     private var dataSource: ListForecastItemDTO?
 
     func renderForecast(_ forecastData: ListForecastItemDTO) {
@@ -21,13 +22,15 @@ class ForecastDayCell: UITableViewCell {
     }
 }
 
+//MARK: - UICollectionViewDataSource
 extension ForecastDayCell : UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ForecastDayCollectionCell.defaultReuseIdentifier, for: indexPath) as! ForecastDayCollectionCell
-//        cell.renderForecast(dataSource[indexPath.section])
+
+        cell.renderForecast(dataSource?.list[indexPath.row])
 
         return cell
     }
@@ -38,6 +41,7 @@ extension ForecastDayCell : UICollectionViewDataSource {
     }
 }
 
+//MARK: - UICollectionViewDelegateFlowLayout
 extension ForecastDayCell : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,

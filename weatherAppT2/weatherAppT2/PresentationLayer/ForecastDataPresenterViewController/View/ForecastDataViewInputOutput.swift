@@ -13,5 +13,8 @@ protocol ForecastDataViewInput: class, AlertPresentable, ActivityIndicator {
 
 protocol ForecastDataViewOutput {
     func viewIsReady()
-//    func didSearchAction(for code: String?)
+}
+
+extension ForecastDataViewInput {
+    func setupInitialState() {}
 }

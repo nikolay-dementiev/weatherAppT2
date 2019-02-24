@@ -27,6 +27,7 @@ struct FiveDaysForecastMapper {
     }
 
     private static func forecastItemsToDTO(_ data: [ListForecastItem]) -> [ForecastItemDTO] {
+
         return data.map { (item: ListForecastItem) -> ForecastItemDTO in
 
             var date: Date?
@@ -38,7 +39,7 @@ struct FiveDaysForecastMapper {
                                    dateAtBeginning: date?.dateAtBeginningOfDay(),
                                    temperature: item.temperatureMain?.temperature,
                                    temperatureMax: item.temperatureMain?.maximumTemperature,
-                                   temperatureMin: item.temperatureMain?.minimumTemperature,                                        iconWeather: item.weatherList?.compactMap{ $0?.icon }.first
+                                   temperatureMin: item.temperatureMain?.minimumTemperature,                              iconWeather: item.weatherList?.compactMap{ $0?.icon }.first
             )
         }
     }

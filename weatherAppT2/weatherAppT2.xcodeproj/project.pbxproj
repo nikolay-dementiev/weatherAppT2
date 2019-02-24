@@ -17,6 +17,14 @@
 		E75E05032222DA560049CF17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05022222DA560049CF17 /* BaseViewController.swift */; };
 		E75E05052222DE980049CF17 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05042222DE980049CF17 /* ActivityIndicator.swift */; };
 		E75E05082222E8920049CF17 /* ForecastDayCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05072222E8920049CF17 /* ForecastDayCollectionCell.swift */; };
+		E75E050A2222FB0A0049CF17 /* UILabel+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05092222FB0A0049CF17 /* UILabel+Additions.swift */; };
+		E75E050C2222FEC50049CF17 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E050B2222FEC50049CF17 /* UIView+Additions.swift */; };
+		E75E050F2222FFD00049CF17 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E050E2222FFD00049CF17 /* ImageDownloader.swift */; };
+		E75E05112222FFE90049CF17 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05102222FFE90049CF17 /* ImageCache.swift */; };
+		E75E0513222316670049CF17 /* KeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E0512222316670049CF17 /* KeyboardProtocol.swift */; };
+		E75E0516222319720049CF17 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E0515222319720049CF17 /* Validator.swift */; };
+		E75E051822231B0E0049CF17 /* UITextField+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E051722231B0E0049CF17 /* UITextField+Additions.swift */; };
+		E75E051A22231B550049CF17 /* UIButton+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E051922231B550049CF17 /* UIButton+Additions.swift */; };
 		E77A27B222216AC90034F343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B122216AC90034F343 /* AppDelegate.swift */; };
 		E77A27B422216AC90034F343 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B322216AC90034F343 /* InitialViewController.swift */; };
 		E77A27B922216ACA0034F343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77A27B822216ACA0034F343 /* Assets.xcassets */; };
@@ -66,6 +74,14 @@
 		E75E05022222DA560049CF17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E75E05042222DE980049CF17 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E75E05072222E8920049CF17 /* ForecastDayCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayCollectionCell.swift; sourceTree = "<group>"; };
+		E75E05092222FB0A0049CF17 /* UILabel+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Additions.swift"; sourceTree = "<group>"; };
+		E75E050B2222FEC50049CF17 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		E75E050E2222FFD00049CF17 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		E75E05102222FFE90049CF17 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		E75E0512222316670049CF17 /* KeyboardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardProtocol.swift; sourceTree = "<group>"; };
+		E75E0515222319720049CF17 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		E75E051722231B0E0049CF17 /* UITextField+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Additions.swift"; sourceTree = "<group>"; };
+		E75E051922231B550049CF17 /* UIButton+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Additions.swift"; sourceTree = "<group>"; };
 		E77A27AE22216AC90034F343 /* weatherAppT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAppT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77A27B122216AC90034F343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77A27B322216AC90034F343 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +202,23 @@
 			path = ForecastDayCollectionView;
 			sourceTree = "<group>";
 		};
+		E75E050D2222FFC00049CF17 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				E75E050E2222FFD00049CF17 /* ImageDownloader.swift */,
+				E75E05102222FFE90049CF17 /* ImageCache.swift */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		E75E05142223195E0049CF17 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				E75E0515222319720049CF17 /* Validator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		E77A27A522216AC90034F343 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +267,7 @@
 		E77A27C522217F5A0034F343 /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				E75E05142223195E0049CF17 /* Validator */,
 				E75E04FE2222D9040049CF17 /* Helpers */,
 				E75E04ED2222B0580049CF17 /* Models */,
 				E77A27FD22218EC20034F343 /* Styleguide */,
@@ -252,6 +286,7 @@
 				E77A280422218F960034F343 /* AlertPresentable.swift */,
 				E75E04FA2222CC700049CF17 /* ReusableView.swift */,
 				E75E05042222DE980049CF17 /* ActivityIndicator.swift */,
+				E75E0512222316670049CF17 /* KeyboardProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -324,6 +359,7 @@
 		E77A27D6222188AB0034F343 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E75E050D2222FFC00049CF17 /* ImageDownloader */,
 				E77A28182221DE9C0034F343 /* MapLayer */,
 				E77A27DD2221897E0034F343 /* Network Layer */,
 				E77A27DA222189240034F343 /* FiveDaysForecastService */,
@@ -421,6 +457,10 @@
 				E77A281B2221E8B60034F343 /* Sequence+Additions.swift */,
 				E77A281D2221ECAD0034F343 /* Date+Additions.swift */,
 				E75E04FC2222D8CC0049CF17 /* UIViewController+Additions.swift */,
+				E75E05092222FB0A0049CF17 /* UILabel+Additions.swift */,
+				E75E050B2222FEC50049CF17 /* UIView+Additions.swift */,
+				E75E051722231B0E0049CF17 /* UITextField+Additions.swift */,
+				E75E051922231B550049CF17 /* UIButton+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -538,8 +578,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75E051A22231B550049CF17 /* UIButton+Additions.swift in Sources */,
+				E75E050C2222FEC50049CF17 /* UIView+Additions.swift in Sources */,
 				E77A280322218F7F0034F343 /* JSONSerializable.swift in Sources */,
 				E77A27E522218A940034F343 /* ServerConfig.swift in Sources */,
+				E75E050A2222FB0A0049CF17 /* UILabel+Additions.swift in Sources */,
 				E77A27FF22218ED30034F343 /* Colors.swift in Sources */,
 				E77A28172221A3E20034F343 /* FiveDaysForecastResponseItem.swift in Sources */,
 				E75E05052222DE980049CF17 /* ActivityIndicator.swift in Sources */,
@@ -553,6 +596,8 @@
 				E77A27E822218BA10034F343 /* ServerResponse.swift in Sources */,
 				E77A2811222195800034F343 /* FiveDaysForecastFlowDelegate.swift in Sources */,
 				E77A27CC222180B60034F343 /* InitialCoordinator.swift in Sources */,
+				E75E051822231B0E0049CF17 /* UITextField+Additions.swift in Sources */,
+				E75E05112222FFE90049CF17 /* ImageCache.swift in Sources */,
 				E77A27D1222182980034F343 /* ViewControllerFactory.swift in Sources */,
 				E77A27D9222188E60034F343 /* AppService.swift in Sources */,
 				E77A280122218F130034F343 /* Fonts.swift in Sources */,
@@ -560,8 +605,10 @@
 				E77A27EE22218C960034F343 /* NetworkService.swift in Sources */,
 				E77A27F622218D610034F343 /* NetworkClient.swift in Sources */,
 				E75E04F22222B47E0049CF17 /* ForecastDataPresenterViewController.swift in Sources */,
+				E75E0516222319720049CF17 /* Validator.swift in Sources */,
 				E77A27FA22218E4B0034F343 /* Dictionary+Additions.swift in Sources */,
 				E77A281C2221E8B60034F343 /* Sequence+Additions.swift in Sources */,
+				E75E050F2222FFD00049CF17 /* ImageDownloader.swift in Sources */,
 				E77A27E02221899B0034F343 /* Commons.swift in Sources */,
 				E77A27B222216AC90034F343 /* AppDelegate.swift in Sources */,
 				E77A27FC22218E730034F343 /* String+Additions.swift in Sources */,
@@ -570,6 +617,7 @@
 				E77A27C822217F760034F343 /* Coordinator.swift in Sources */,
 				E77A281E2221ECAD0034F343 /* Date+Additions.swift in Sources */,
 				E77A27D4222186BD0034F343 /* InitialPresenter.swift in Sources */,
+				E75E0513222316670049CF17 /* KeyboardProtocol.swift in Sources */,
 				E77A280F222194FE0034F343 /* InitialViewInputOutput.swift in Sources */,
 				E75E04FD2222D8CC0049CF17 /* UIViewController+Additions.swift in Sources */,
 				E75E04F42222B4D40049CF17 /* ForecastDataViewInputOutput.swift in Sources */,
@@ -718,7 +766,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ5WJ6ZC4G;
 				INFOPLIST_FILE = "$(SRCROOT)/weatherAppT2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -726,6 +776,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.test.com.weatherAppT2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -735,7 +786,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ5WJ6ZC4G;
 				INFOPLIST_FILE = "$(SRCROOT)/weatherAppT2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -743,6 +796,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.test.com.weatherAppT2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

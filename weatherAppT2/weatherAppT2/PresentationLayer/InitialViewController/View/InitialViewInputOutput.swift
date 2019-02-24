@@ -8,7 +8,6 @@
 
 protocol InitialViewInput: class, AlertPresentable, ActivityIndicator {
     func setupInitialState()
-    func showCommonInfo(_ info: String)
 }
 
 protocol InitialViewOutput {
@@ -16,3 +15,6 @@ protocol InitialViewOutput {
     func didSearchAction(for code: String?)
 }
 
+extension InitialViewInput {
+    func setupInitialState() {}
+}

@@ -10,6 +10,7 @@ import Foundation
 
 private enum HostPath: String {
     case base = "http://api.openweathermap.org/data/2.5"
+    case iconDownload = "http://openweathermap.org/img/w"
 }
 
 enum EndPoint {
@@ -50,6 +51,10 @@ struct ServerConfig {
         }
 
         return params
+    }
+
+    static func getImageDownloadHostPath() -> String {
+        return HostPath.iconDownload.rawValue
     }
 
     // MARK: - Private API
