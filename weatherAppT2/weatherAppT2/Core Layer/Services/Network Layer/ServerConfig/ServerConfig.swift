@@ -17,12 +17,10 @@ enum EndPoint {
 }
 
 enum ParameterKey: String {
-    case appid
+    case appid = "appid"
 
     var key: String {
-        switch self {
-        case .appid: return "appid"
-        }
+        return rawValue
     }
     var value: String {
         switch self {

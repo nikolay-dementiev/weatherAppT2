@@ -25,10 +25,14 @@ extension InitialPresenter: InitialViewOutput {
     }
 
     func didSearchAction(for code: String?) {
+        view.startAnimate()
+
         guard let code = code else { return }
         let params = FiveDayForecastRequestParams.init(countryName: code)
 
         restService.getFiveDaysForecast(with: params) { [weak self] (result) in
+            self?.view.stopAnimate()
+
             switch result {
             case .success(let items):
                 self?.flowDelegate?.didReceiveFiveDaysForecast(items)

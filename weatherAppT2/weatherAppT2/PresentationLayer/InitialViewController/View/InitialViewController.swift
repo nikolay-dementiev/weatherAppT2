@@ -8,18 +8,17 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+class InitialViewController: BaseViewController {
 
     // MARK: - Props
     var output: InitialViewOutput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     // MARK: - Actions
-
     @IBAction private func searchAction(_ sender: Any) {
         output.didSearchAction(for: "Kiev,UA")
     }
@@ -35,6 +34,4 @@ extension InitialViewController: InitialViewInput {
     func showCommonInfo(_ info: String) {
         
     }
-
-
 }

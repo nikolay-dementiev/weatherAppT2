@@ -17,4 +17,11 @@ class ViewControllerFactory {
         return vc
     }
 
+    static func makeForecastDataPresenterViewController(with presenter: ForecastDataPresenter) -> UIViewController {
+        let vc: ForecastDataPresenterViewController = Storyboard.main.instantiateViewController()
+        vc.output = presenter
+        presenter.view = vc
+        return vc
+    }
+
 }

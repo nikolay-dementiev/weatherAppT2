@@ -6,7 +6,7 @@
 //  Copyright © 2019 test. All rights reserved.
 //
 
-protocol InitialViewInput: class, AlertPresentable {
+protocol InitialViewInput: class, AlertPresentable, ActivityIndicator {
     func setupInitialState()
     func showCommonInfo(_ info: String)
 }

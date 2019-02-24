@@ -11,7 +11,7 @@ import Foundation
 typealias ListForecastItem = FiveDaysForecastResponseItem.ListForecastResponseItem
 
 class FiveDayForecastService {
-    typealias FiveDayForecastCompletion = (Result<[ListForecastItemDTO]>) -> ()
+    typealias FiveDayForecastCompletion = (Result<[ListForecastItem]>) -> ()
 
     // MARK: - Private Props
     private var networkService = NetworkService()
@@ -27,8 +27,7 @@ class FiveDayForecastService {
         networkService.execute(request) { (result: Result<FiveDaysForecastResponseItem>) in
             switch result {
             case .success(let response):
-                let mapList = FiveDaysForecastMapper.listForecastItemsToDTO(response.forecastList)
-                completion(.success(mapList))
+                completion(.success(response.forecastList))
             case .failure(let error):
                 completion(.failure(error))
             }

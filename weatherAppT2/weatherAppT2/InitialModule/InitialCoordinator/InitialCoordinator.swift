@@ -19,11 +19,17 @@ class InitialCoordinator {
     }
 
     // MARK: - Private API
-    private func startMainUI() {
+    private func startInitialVC() {
         let presenter = InitialPresenter()
         presenter.flowDelegate = self
         let vc = ViewControllerFactory.makeInitialViewController(with: presenter)
         navigator.navigate(to: vc, transition: .root)
+    }
+
+    private func startForecastDataVC(_ items: [ListForecastItem]) {
+        let presenter = ForecastDataPresenter(with: items)
+        let vc = ViewControllerFactory.makeForecastDataPresenterViewController(with: presenter)
+        navigator.navigate(to: vc, transition: .push)
     }
 
     private func styleRootVC(_ rootVC: UINavigationController) {
@@ -35,15 +41,15 @@ class InitialCoordinator {
 
 extension InitialCoordinator: Coordinator {
     func start() {
-        self.startMainUI()
+        self.startInitialVC()
     }
 }
 
 
 extension InitialCoordinator: FiveDaysForecastFlowDelegate {
-    func didReceiveFiveDaysForecast(_ items: [ListForecastItemDTO]) {
+    func didReceiveFiveDaysForecast(_ items: [ListForecastItem]) {
         DispatchQueue.main.async {
-//            self.startResultsStory(items)
+            self.startForecastDataVC(items)
         }
     }
 }

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E75E04F22222B47E0049CF17 /* ForecastDataPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04F12222B47E0049CF17 /* ForecastDataPresenterViewController.swift */; };
+		E75E04F42222B4D40049CF17 /* ForecastDataViewInputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04F32222B4D40049CF17 /* ForecastDataViewInputOutput.swift */; };
+		E75E04F62222B6CB0049CF17 /* ForecastDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04F52222B6CB0049CF17 /* ForecastDataPresenter.swift */; };
+		E75E04F92222CB900049CF17 /* ForecastDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04F82222CB900049CF17 /* ForecastDayCell.swift */; };
+		E75E04FB2222CC700049CF17 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04FA2222CC700049CF17 /* ReusableView.swift */; };
+		E75E04FD2222D8CC0049CF17 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04FC2222D8CC0049CF17 /* UIViewController+Additions.swift */; };
+		E75E05002222D9190049CF17 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E04FF2222D9190049CF17 /* SpinnerViewController.swift */; };
+		E75E05032222DA560049CF17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05022222DA560049CF17 /* BaseViewController.swift */; };
+		E75E05052222DE980049CF17 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E05042222DE980049CF17 /* ActivityIndicator.swift */; };
 		E77A27B222216AC90034F343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B122216AC90034F343 /* AppDelegate.swift */; };
 		E77A27B422216AC90034F343 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B322216AC90034F343 /* InitialViewController.swift */; };
 		E77A27B922216ACA0034F343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77A27B822216ACA0034F343 /* Assets.xcassets */; };
@@ -46,6 +55,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E75E04F12222B47E0049CF17 /* ForecastDataPresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDataPresenterViewController.swift; sourceTree = "<group>"; };
+		E75E04F32222B4D40049CF17 /* ForecastDataViewInputOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDataViewInputOutput.swift; sourceTree = "<group>"; };
+		E75E04F52222B6CB0049CF17 /* ForecastDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDataPresenter.swift; sourceTree = "<group>"; };
+		E75E04F82222CB900049CF17 /* ForecastDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayCell.swift; sourceTree = "<group>"; };
+		E75E04FA2222CC700049CF17 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		E75E04FC2222D8CC0049CF17 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		E75E04FF2222D9190049CF17 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		E75E05022222DA560049CF17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E75E05042222DE980049CF17 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E77A27AE22216AC90034F343 /* weatherAppT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAppT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77A27B122216AC90034F343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77A27B322216AC90034F343 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +115,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E75E04ED2222B0580049CF17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E77A27E922218C190034F343 /* ResponseItems */,
+				E77A281F2221EFFC0034F343 /* MapItems */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E75E04EE2222B3200049CF17 /* ForecastDataPresenterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E75E04EF2222B3580049CF17 /* View */,
+				E75E04F02222B35F0049CF17 /* Presenter */,
+			);
+			path = ForecastDataPresenterViewController;
+			sourceTree = "<group>";
+		};
+		E75E04EF2222B3580049CF17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E75E04F72222CB680049CF17 /* ForecastDayCell */,
+				E75E04F12222B47E0049CF17 /* ForecastDataPresenterViewController.swift */,
+				E75E04F32222B4D40049CF17 /* ForecastDataViewInputOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E75E04F02222B35F0049CF17 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E75E04F52222B6CB0049CF17 /* ForecastDataPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E75E04F72222CB680049CF17 /* ForecastDayCell */ = {
+			isa = PBXGroup;
+			children = (
+				E75E04F82222CB900049CF17 /* ForecastDayCell.swift */,
+			);
+			path = ForecastDayCell;
+			sourceTree = "<group>";
+		};
+		E75E04FE2222D9040049CF17 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E75E04FF2222D9190049CF17 /* SpinnerViewController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E75E05012222DA340049CF17 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E75E05022222DA560049CF17 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		E77A27A522216AC90034F343 = {
 			isa = PBXGroup;
 			children = (
@@ -116,11 +194,11 @@
 		E77A27B022216AC90034F343 /* weatherAppT2 */ = {
 			isa = PBXGroup;
 			children = (
+				E77A27C422217EDC0034F343 /* ApplicationLayer */,
 				E77A27CD222182720034F343 /* PresentationLayer */,
 				E77A27C92221808F0034F343 /* InitialModule */,
-				E77A27C422217EDC0034F343 /* ApplicationLayer */,
-				E77A27C322217EB20034F343 /* Resources */,
 				E77A27C522217F5A0034F343 /* Core Layer */,
+				E77A27C322217EB20034F343 /* Resources */,
 			);
 			path = weatherAppT2;
 			sourceTree = "<group>";
@@ -145,6 +223,8 @@
 		E77A27C522217F5A0034F343 /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				E75E04FE2222D9040049CF17 /* Helpers */,
+				E75E04ED2222B0580049CF17 /* Models */,
 				E77A27FD22218EC20034F343 /* Styleguide */,
 				E77A27F722218E0E0034F343 /* Extensions */,
 				E77A27D6222188AB0034F343 /* Services */,
@@ -159,6 +239,8 @@
 				E77A27C722217F760034F343 /* Coordinator.swift */,
 				E77A280222218F7F0034F343 /* JSONSerializable.swift */,
 				E77A280422218F960034F343 /* AlertPresentable.swift */,
+				E75E04FA2222CC700049CF17 /* ReusableView.swift */,
+				E75E05042222DE980049CF17 /* ActivityIndicator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -182,11 +264,12 @@
 		E77A27CD222182720034F343 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E77A2809222192E70034F343 /* Navigator */,
+				E77A27CE2221827B0034F343 /* PresentationCommon */,
 				E77A281222219CE80034F343 /* Main.storyboard */,
 				E77A27BA22216ACA0034F343 /* LaunchScreen.storyboard */,
-				E77A2809222192E70034F343 /* Navigator */,
-				E77A27D2222186A20034F343 /* InitialVC */,
-				E77A27CE2221827B0034F343 /* PresentationCommon */,
+				E77A27D2222186A20034F343 /* InitialViewController */,
+				E75E04EE2222B3200049CF17 /* ForecastDataPresenterViewController */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -194,6 +277,7 @@
 		E77A27CE2221827B0034F343 /* PresentationCommon */ = {
 			isa = PBXGroup;
 			children = (
+				E75E05012222DA340049CF17 /* BaseViewController */,
 				E77A27CF222182890034F343 /* ViewControllerFactory */,
 			);
 			path = PresentationCommon;
@@ -208,13 +292,13 @@
 			path = ViewControllerFactory;
 			sourceTree = "<group>";
 		};
-		E77A27D2222186A20034F343 /* InitialVC */ = {
+		E77A27D2222186A20034F343 /* InitialViewController */ = {
 			isa = PBXGroup;
 			children = (
 				E77A2806222190B70034F343 /* View */,
 				E77A27D5222186E20034F343 /* Presenter */,
 			);
-			path = InitialVC;
+			path = InitialViewController;
 			sourceTree = "<group>";
 		};
 		E77A27D5222186E20034F343 /* Presenter */ = {
@@ -280,7 +364,6 @@
 			isa = PBXGroup;
 			children = (
 				E77A27E722218BA10034F343 /* ServerResponse.swift */,
-				E77A27E922218C190034F343 /* ResponseItems */,
 			);
 			path = Resposnse;
 			sourceTree = "<group>";
@@ -322,20 +405,13 @@
 		E77A27F722218E0E0034F343 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E77A27F822218E180034F343 /* Foundation */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E77A27F822218E180034F343 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
 				E77A27F922218E4B0034F343 /* Dictionary+Additions.swift */,
 				E77A27FB22218E730034F343 /* String+Additions.swift */,
 				E77A281B2221E8B60034F343 /* Sequence+Additions.swift */,
 				E77A281D2221ECAD0034F343 /* Date+Additions.swift */,
+				E75E04FC2222D8CC0049CF17 /* UIViewController+Additions.swift */,
 			);
-			path = Foundation;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E77A27FD22218EC20034F343 /* Styleguide */ = {
@@ -367,7 +443,6 @@
 		E77A28182221DE9C0034F343 /* MapLayer */ = {
 			isa = PBXGroup;
 			children = (
-				E77A281F2221EFFC0034F343 /* MapItems */,
 				E77A28192221DEFC0034F343 /* FiveDaysForecastMapper.swift */,
 			);
 			path = MapLayer;
@@ -456,9 +531,13 @@
 				E77A27E522218A940034F343 /* ServerConfig.swift in Sources */,
 				E77A27FF22218ED30034F343 /* Colors.swift in Sources */,
 				E77A28172221A3E20034F343 /* FiveDaysForecastResponseItem.swift in Sources */,
+				E75E05052222DE980049CF17 /* ActivityIndicator.swift in Sources */,
+				E75E05002222D9190049CF17 /* SpinnerViewController.swift in Sources */,
 				E77A280522218F960034F343 /* AlertPresentable.swift in Sources */,
 				E77A27F322218D360034F343 /* Request.swift in Sources */,
 				E77A280B222192F40034F343 /* Navigator.swift in Sources */,
+				E75E04F62222B6CB0049CF17 /* ForecastDataPresenter.swift in Sources */,
+				E75E05032222DA560049CF17 /* BaseViewController.swift in Sources */,
 				E77A27E822218BA10034F343 /* ServerResponse.swift in Sources */,
 				E77A2811222195800034F343 /* FiveDaysForecastFlowDelegate.swift in Sources */,
 				E77A27CC222180B60034F343 /* InitialCoordinator.swift in Sources */,
@@ -468,6 +547,7 @@
 				E77A27B422216AC90034F343 /* InitialViewController.swift in Sources */,
 				E77A27EE22218C960034F343 /* NetworkService.swift in Sources */,
 				E77A27F622218D610034F343 /* NetworkClient.swift in Sources */,
+				E75E04F22222B47E0049CF17 /* ForecastDataPresenterViewController.swift in Sources */,
 				E77A27FA22218E4B0034F343 /* Dictionary+Additions.swift in Sources */,
 				E77A281C2221E8B60034F343 /* Sequence+Additions.swift in Sources */,
 				E77A27E02221899B0034F343 /* Commons.swift in Sources */,
@@ -479,8 +559,12 @@
 				E77A281E2221ECAD0034F343 /* Date+Additions.swift in Sources */,
 				E77A27D4222186BD0034F343 /* InitialPresenter.swift in Sources */,
 				E77A280F222194FE0034F343 /* InitialViewInputOutput.swift in Sources */,
+				E75E04FD2222D8CC0049CF17 /* UIViewController+Additions.swift in Sources */,
+				E75E04F42222B4D40049CF17 /* ForecastDataViewInputOutput.swift in Sources */,
+				E75E04F92222CB900049CF17 /* ForecastDayCell.swift in Sources */,
 				E77A280D222193E30034F343 /* Storyboard.swift in Sources */,
 				E77A27DC222189470034F343 /* FiveDaysForecastService.swift in Sources */,
+				E75E04FB2222CC700049CF17 /* ReusableView.swift in Sources */,
 				E77A281A2221DEFC0034F343 /* FiveDaysForecastMapper.swift in Sources */,
 				E77A28152221A2BF0034F343 /* FiveDayForecastRequestParams.swift in Sources */,
 				E77A27EC22218C7F0034F343 /* NetworkServiceProtocol.swift in Sources */,

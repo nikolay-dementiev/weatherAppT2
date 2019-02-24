@@ -28,6 +28,13 @@ extension Date {
         return beginningOfDay
     }
 
+    func formatForCellSection() -> String {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "MMM. dd"
+
+        return dateFormatterPrint.string(from: self)
+    }
+
     var startOfDay: Date {
         return Calendar.current.startOfDay(for: self)
     }
