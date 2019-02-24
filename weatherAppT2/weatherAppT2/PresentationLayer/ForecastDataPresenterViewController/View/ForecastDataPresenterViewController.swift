@@ -26,6 +26,8 @@ class ForecastDataPresenterViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupDefaultData()
         output.viewIsReady()
         tableView.tableFooterView = UIView()
     }
@@ -35,6 +37,9 @@ class ForecastDataPresenterViewController: BaseViewController {
         navigationController?.isNavigationBarHidden = false
     }
 
+    private func setupDefaultData() {
+       self.title = "ForecastDayCollectionCellTitle".localized
+    }
 }
 
 // MARK: - ForecastDataViewInput

@@ -33,8 +33,7 @@ class InitialViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        searchTextField.text = Settings.defaultCountryName
-
+        setupDefaultData()
         output.viewIsReady()
     }
 
@@ -75,6 +74,12 @@ class InitialViewController: BaseViewController {
     // MARK: - Private API
     private func fireAppearance() {
         searchTextField.becomeFirstResponder()
+    }
+
+    private func setupDefaultData() {
+        searchTextField.text = Settings.defaultCountryName
+        searchTitleLabel.text = "SerchByCountryName".localized
+        getDataButton.setTitle("GetData".localized, for: .normal)
     }
 }
 

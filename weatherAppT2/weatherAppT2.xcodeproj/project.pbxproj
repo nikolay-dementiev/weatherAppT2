@@ -25,6 +25,7 @@
 		E75E0516222319720049CF17 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E0515222319720049CF17 /* Validator.swift */; };
 		E75E051822231B0E0049CF17 /* UITextField+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E051722231B0E0049CF17 /* UITextField+Additions.swift */; };
 		E75E051A22231B550049CF17 /* UIButton+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E051922231B550049CF17 /* UIButton+Additions.swift */; };
+		E75E051E222325BB0049CF17 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E75E0520222325BB0049CF17 /* Localizable.strings */; };
 		E77A27B222216AC90034F343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B122216AC90034F343 /* AppDelegate.swift */; };
 		E77A27B422216AC90034F343 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A27B322216AC90034F343 /* InitialViewController.swift */; };
 		E77A27B922216ACA0034F343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77A27B822216ACA0034F343 /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		E75E0515222319720049CF17 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		E75E051722231B0E0049CF17 /* UITextField+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Additions.swift"; sourceTree = "<group>"; };
 		E75E051922231B550049CF17 /* UIButton+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Additions.swift"; sourceTree = "<group>"; };
+		E75E051F222325BB0049CF17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E77A27AE22216AC90034F343 /* weatherAppT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAppT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77A27B122216AC90034F343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77A27B322216AC90034F343 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,14 @@
 			path = Validator;
 			sourceTree = "<group>";
 		};
+		E75E051B222324760049CF17 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				E75E0520222325BB0049CF17 /* Localizable.strings */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
 		E77A27A522216AC90034F343 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +260,7 @@
 		E77A27C322217EB20034F343 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E75E051B222324760049CF17 /* Localisation */,
 				E77A27B822216ACA0034F343 /* Assets.xcassets */,
 				E77A27BD22216ACA0034F343 /* Info.plist */,
 			);
@@ -566,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77A281322219CE90034F343 /* Main.storyboard in Resources */,
+				E75E051E222325BB0049CF17 /* Localizable.strings in Resources */,
 				E77A27BC22216ACA0034F343 /* LaunchScreen.storyboard in Resources */,
 				E77A27B922216ACA0034F343 /* Assets.xcassets in Resources */,
 			);
@@ -635,6 +647,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E75E0520222325BB0049CF17 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E75E051F222325BB0049CF17 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E77A27BA22216ACA0034F343 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -13,5 +13,9 @@ extension String {
         guard let f = fields else { return self }
         return try f.urlEncodedString(base: self)
     }
+
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+    }
 }
 

@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  weatherAppT2
+
+  Created by Nikolay Dementiev on 24.02.2019.
+  Copyright © 2019 test. All rights reserved.
+*/
+
+//InitialViewController
+"SerchByCountryName" = "Serch by country name";
+"GetData" = "Get Data";
+
+//ForecastDayCollectionCell
+"ForecastDayCollectionCellTitle" = "5 days forecast";
+"TemperatureTitle" = "temp.:";
+"TemperatureGradUnit" = "°C";
+"TimeTitle" = "time:";
+"TimeHourUnit" = "h";
+

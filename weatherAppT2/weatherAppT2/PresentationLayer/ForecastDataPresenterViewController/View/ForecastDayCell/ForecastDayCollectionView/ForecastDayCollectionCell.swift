@@ -54,10 +54,10 @@ class ForecastDayCollectionCell: UICollectionViewCell {
         if let temperature = dataSource.temperature {
             temperatureLabelText = temperature.description
         }
-        temperatureLabel.text = "temp.: \(temperatureLabelText)°C"
+        temperatureLabel.text = "\("TemperatureTitle".localized) \(temperatureLabelText)\("TemperatureGradUnit".localized)"
 
         let timeLabelText = dataSource.date?.getHour() ?? ""
-        timeLabel.text = "time: \(timeLabelText)h"
+        timeLabel.text = "\("TimeTitle".localized) \(timeLabelText)\("TimeHourUnit".localized)"
 
         if let iconWeather = dataSource.iconWeatherURL {
             downloadMedia(iconWeather)
